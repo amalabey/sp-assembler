@@ -1,0 +1,16 @@
+        {
+            "name":"default",
+            "dependencies": {
+            },
+            "parameters":[
+                {
+                    "name":"sharepoint:site_url",
+                    "mandatory":true,
+                    "type":"String",
+                    "description":"Root Site Collection Url"
+                }
+            ],
+            "actions":[
+                "scripts/init.ps1"
+            ]
+        }

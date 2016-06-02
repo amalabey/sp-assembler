@@ -1,0 +1,19 @@
+{
+    "name":"Contoso Intranet",
+    "edition":"seattle",
+    "composition":[
+        {
+            "path":"/",
+            "components":{
+                "master-page":"^1.0.0",
+                "intranet-home-page":"1.0.0"
+            }
+        },
+        {
+            "path":"/news-center",
+            "components":{
+                "intranet-news":"1.0.0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name":"default",
+    "dependencies": {
+        "common-scripts":"^1.0.0"
+    },
+    "parameters":[
+        {
+            "name":"sharepoint:site_url",
+            "mandatory":true,
+            "type":"String",
+            "description":"Root Site Collection Url"
+        },
+        {
+            "name":"client:logo_url",
+            "mandatory":false,
+            "type":"String",
+            "description":"Url to client's logo icon",
+            "defaultValue":"logo.png"
+        }
+    ],
+    "actions":[
+        "templates/provision_cts.json",
+        "files/_catalogue/masterpage/default_master.master",
+        "files/Style Library",
+        "scripts/attach_ct.ps1"
+    ]
+}

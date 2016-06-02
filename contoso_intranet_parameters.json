@@ -1,0 +1,37 @@
+{
+    "mandatory":[
+        {
+            "name":"sharepoint:site_url",
+            "value":"http://contoso.sharepoint.com",
+            "_help":{
+                "usedIn":["master-page","intranet-home-page","intranet-news"],
+                "mandatory":true,
+                "type":"String",
+                "description":"Root Site Collection Url"
+            }
+        }          
+    ],
+    "optional":[
+        {
+            "name":"client:news_wp_name",
+            "value":"Company News",
+            "_help":{
+                "usedIn":["intranet-home-page"],
+                "mandatory":false,
+                "type":"String",
+                "description":"Custom Name for In the News web part",
+                "defaultValue":"In The News"
+            }
+        },
+        {
+            "name":"client:news_wp_zone_name",
+            "value":"middleTop",
+            "_help":{
+                "mandatory":false,
+                "type":"String",
+                "description":"Specify a different zone for news web part",
+                "defaultValue":"bottomRight"
+            }
+        }
+    ]
+}

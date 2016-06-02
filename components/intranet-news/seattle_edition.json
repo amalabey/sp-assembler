@@ -1,0 +1,38 @@
+{
+    "name":"seattle",
+    "dependencies": {
+        "common-scripts":"^1.0.0",
+        "master-page/seattle":"^1.0.0",
+        "intranet-home-page/seattle":"^1.0.0"
+    },
+    "parameters":[
+        {
+            "name":"sharepoint:site_url",
+            "mandatory":true,
+            "type":"String",
+            "description":"Root Site Collection Url"
+        },
+        {
+            "name":"client:news_wp_name",
+            "mandatory":false,
+            "type":"String",
+            "description":"Custom Name for In the News web part",
+            "defaultValue":"In The News"
+        },
+        {
+            "name":"client:news_wp_zone_name",
+            "mandatory":false,
+            "type":"String",
+            "description":"Specify a different zone for news web part",
+            "defaultValue":"bottomRight"
+        }
+    ],
+    "actions":[
+        "templates/news_cts.json",
+        "files/_catalogue",
+        "files/_wps",
+        "files/Style Library",
+        "scripts/associate_news_cts.ps1",
+        "scripts/add_news_wps.ps1"
+    ]
+}
